@@ -1,3 +1,7 @@
+(env
+ (dev
+  (flags (:standard -w -16))))
+
 (rule
  (mode promote)
  (deps
