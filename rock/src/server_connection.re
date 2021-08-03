@@ -1,5 +1,5 @@
 open Lwt.Syntax;
-let (let*) = Lwt.bind;
+
 exception Halt(Response.t);
 
 let halt = response => raise(Halt(response));

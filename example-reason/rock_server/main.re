@@ -1,6 +1,6 @@
 open Rock;
 open Lwt.Syntax;
-// let (let*) = Lwt.bind;
+
 let index_handler = _req => {
   let headers = Httpaf.Headers.of_list([("Content-Type", "text/plain")]);
   let body = Body.of_string("Hello World!\n");
